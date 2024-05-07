@@ -1,0 +1,22 @@
+{
+  "name": "ejercicio",
+  "version": "1.0.0",
+  "description": "Prueba node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saidscv23/LEIBNIZ.git"
+  },
+  "author": "Said Carrillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saidscv23/LEIBNIZ/issues"
+  },
+  "homepage": "https://github.com/saidscv23/LEIBNIZ#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
