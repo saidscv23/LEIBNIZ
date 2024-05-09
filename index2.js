@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
- 
+app.use(express.json());
 
 var tareas = [
     { id: '1', nombre: 'Comprar leche' },
@@ -13,14 +13,38 @@ var tareas = [
     res.json(tareas); // Devuelve todas las tareas como respuesta JSON
   });   
 
-  
+
 
 // Ruta POST para crear una nueva tarea
 app.post('/tareas', (req, res) => {
-    const { id, nombre } = req.body; // Extrae 'id' y 'nombre' del cuerpo de la solicitud
+    const { id, nombre } = req.query;
     tareas.push({ id, nombre }); // Agrega una nueva tarea a la lista
     res.status(201).json({ message: 'Tarea creada', tarea: { id, nombre } }); // Responde con estado 201 (Creado)
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
